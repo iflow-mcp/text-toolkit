@@ -1,5 +1,5 @@
 {
-  "name": "text-toolkit",
+  "name": "@cicatriz/text-toolkit",
   "version": "1.0.0",
   "description": "Text Transformation & Formatting MCP Server for the Cline Marketplace",
   "main": "dist/index.js",

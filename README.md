@@ -124,7 +124,7 @@
 To run the TextToolkit MCP server using Node.js npx, use the following command:
 
 ```bash
-npx -y text-toolkit@latest
+npx -y @cicatriz/text-toolkit@latest
 ```
 
 ### Client-Specific Installation
@@ -144,7 +144,7 @@ To add this server to Cursor IDE:
       "command": "npx",
       "args": [
         "-y",
-        "text-toolkit"
+        "@cicatriz/text-toolkit"
       ]
     }
   }
@@ -166,7 +166,7 @@ Scroll down to the Cascade section and add the TextToolkit MCP server directly i
       "command": "npx",
       "args": [
         "-y",
-        "text-toolkit"
+        "@cicatriz/text-toolkit"
       ]
     }
   }
@@ -184,7 +184,7 @@ Add the following JSON manually to your `cline_mcp_settings.json` via Cline MCP 
       "command": "npx",
       "args": [
         "-y",
-        "text-toolkit"
+        "@cicatriz/text-toolkit"
       ]
     }
   }
@@ -202,7 +202,7 @@ Access the MCP settings by clicking Edit MCP Settings in Roo Code settings or us
       "command": "npx",
       "args": [
         "-y",
-        "text-toolkit"
+        "@cicatriz/text-toolkit"
       ]
     }
   }
@@ -220,7 +220,7 @@ Add the following to your `claude_desktop_config.json` file:
       "command": "npx",
       "args": [
         "-y",
-        "text-toolkit"
+        "@cicatriz/text-toolkit"
       ]
     }
   }
@@ -234,7 +234,7 @@ See the [Claude Desktop documentation](https://claude.ai/docs/mcp) for more deta
 You can also run it as CLI by running the following command:
 
 ```bash
-npx -y text-toolkit@latest
+npx -y @cicatriz/text-toolkit@latest
 ```
 
 ### Alternative Installation Methods
@@ -243,7 +243,7 @@ npx -y text-toolkit@latest
 
 ```bash
 # Install globally from npm
-npm install -g text-toolkit
+npm install -g @cicatriz/text-toolkit
 
 # Run the server
 text-toolkit
@@ -290,7 +290,7 @@ You can test the TextToolkit MCP server using the MCP Inspector:
 npm install -g @modelcontextprotocol/inspector
 
 # Run the inspector against your server
-mcp-inspector text-toolkit
+mcp-inspector @cicatriz/text-toolkit
 ```
 
 ### Examples
@@ -623,4 +623,4 @@ MIT
 
 ## 👨‍💻 Author
 
-Cicatriz 
+Cicatriz

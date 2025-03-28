@@ -1,0 +1,82 @@
+{
+  "name": "text-toolkit",
+  "version": "1.0.0",
+  "description": "Text Transformation & Formatting MCP Server for the Cline Marketplace",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "text-toolkit": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "test": "echo 'Tests are currently disabled. Use the MCP Inspector for testing.'",
+    "lint": "eslint src/**/*.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "text",
+    "transformation",
+    "formatting",
+    "cline",
+    "marketplace",
+    "claude",
+    "ai",
+    "assistant",
+    "tools",
+    "utilities",
+    "case",
+    "encoding",
+    "regex",
+    "uuid",
+    "hash",
+    "lorem-ipsum"
+  ],
+  "author": "Cicatriz <thedawg100@gmail.com>",
+  "homepage": "https://github.com/Cicatriiz/text-toolkit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cicatriiz/text-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cicatriiz/text-toolkit/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@types/node": "^22.13.14",
+    "change-case": "^5.4.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "express-rate-limit": "^7.5.0",
+    "html-entities": "^2.5.3",
+    "js-beautify": "^1.15.4",
+    "lorem-ipsum": "^2.0.8",
+    "typescript": "^5.8.2",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.1",
+    "@types/cors": "^2.8.17",
+    "@types/crypto-js": "^4.2.2",
+    "@types/eventsource": "^1.1.15",
+    "@types/express": "^5.0.1",
+    "@types/html-entities": "^1.3.3",
+    "@types/js-beautify": "^1.14.3",
+    "@types/mocha": "^10.0.10",
+    "@types/uuid": "^10.0.0",
+    "chai": "^5.2.0",
+    "eventsource": "^3.0.6",
+    "mocha": "^11.1.0",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2"
+  }
+}

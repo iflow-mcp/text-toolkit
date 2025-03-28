@@ -1,0 +1,9 @@
+{
+  "name": "text-toolkit-examples",
+  "version": "1.0.0",
+  "description": "Examples for the TextToolkit MCP server",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0"
+  }
+}

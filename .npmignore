@@ -1,0 +1,41 @@
+# Source files
+src/
+tsconfig.json
+.env
+.env.example
+
+# Development files
+.vscode/
+.github/
+.git/
+.gitignore
+.eslintrc
+.eslintignore
+.prettierrc
+.prettierignore
+
+# Test files
+test/
+test-*.js
+*.test.ts
+*.spec.ts
+coverage/
+
+# Examples (keep them in the repo but not in the npm package)
+examples/
+
+# Documentation files (except README.md)
+docs/
+*.md
+!README.md
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+.DS_Store
+node_modules/
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+.github/workflows/

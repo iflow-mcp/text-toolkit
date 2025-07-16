@@ -43,7 +43,7 @@ registerResources(server);
 async function startServer() {
   try {
     if (sseMode) {
-      console.log(`Starting server in SSE mode on port ${port}...`);
+      console.error(`Starting server in SSE mode on port ${port}...`);
 
       // Create Express app
       const app = express();
@@ -103,10 +103,10 @@ async function startServer() {
           // Clean up on close
           res.on("close", () => {
             delete transports[sessionId];
-            console.log(`Session ${sessionId} closed`);
+            console.error(`Session ${sessionId} closed`);
           });
 
-          console.log(`New SSE session established: ${sessionId}`);
+          console.error(`New SSE session established: ${sessionId}`);
 
           // Connect the transport to the server
           await server.connect(transport);
@@ -140,10 +140,10 @@ async function startServer() {
       // Start the Express server
       const server_port = parseInt(port, 10);
       app.listen(server_port, () => {
-        console.log(`Express server listening on port ${server_port}`);
+        console.error(`Express server listening on port ${server_port}`);
       });
     } else {
-      console.log('Starting server in stdio mode...');
+      console.error('Starting server in stdio mode...');
       const transport = new StdioServerTransport();
       await server.connect(transport);
     }

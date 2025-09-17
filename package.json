@@ -1,6 +1,6 @@
 {
   "name": "@iflow-mcp/text-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Text Transformation & Formatting MCP Server for the Cline Marketplace",
   "main": "dist/index.js",
   "type": "module",
